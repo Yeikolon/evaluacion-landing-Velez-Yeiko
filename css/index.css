@@ -1,0 +1,258 @@
+/*navegacion */
+
+.navbar{
+    background-color:var(--color-principal) !important;
+}
+
+.logo{
+    color:var(--color-secundario);
+    font-weight:800;
+    margin:0;
+}
+
+.nav-link{
+    color:var(--color-claro) !important;
+}
+
+.nav-link:hover{
+    color:var(--color-secundario) !important;
+}
+
+nav h2{
+    color: white;
+}
+
+
+
+/* Seccion principal */
+
+#inicio{
+    background-color:var(--color-principal);
+    color:var(--color-claro);
+    padding:3rem 0;
+}
+
+.hero{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+    text-align:center;
+}
+
+.hero h1{
+    color:var(--color-secundario);
+    font-size:2rem;
+    margin-bottom:1rem;
+}
+
+.hero p{
+    margin-bottom:1.5rem;
+}
+
+.hero-img img{
+    border-radius:8px;
+}
+
+/*Beneficios*/
+
+.beneficios{
+    padding:3rem 0;
+}
+
+.beneficios-flex{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.beneficio-item{
+    background-color:var(--color-fondo);
+    border-left:5px solid var(--color-secundario);
+    padding:1rem;
+    border-radius:6px;
+}
+
+.beneficio-item h3{
+    margin-bottom:0.5rem;
+}
+
+/*Planes */
+
+.actividades{
+    background-color:var(--color-fondo);
+    padding:3rem 0;
+}
+
+.actividades-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:1rem;
+}
+
+.card-actividad{
+    background-color:var(--color-claro);
+    border-radius:8px;
+    overflow:hidden;
+    box-shadow:0 2px 8px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card-actividad img{
+    height:180px;
+    object-fit:cover;
+}
+
+.card-body{
+    padding:1rem;
+}
+
+.card-body h3{
+    color:var(--color-secundario);
+    margin-bottom:0.5rem;
+}
+
+/* Informacion */
+
+.seguridad{
+    background-color:var(--color-principal);
+    color:var(--color-claro);
+    padding:3rem 0;
+}
+
+.seguridad-flex{
+    display:flex;
+    flex-direction:column;
+    gap:1.5rem;
+}
+
+.seguridad-img{
+    border-radius:8px;
+}
+
+.seguridad-texto h2{
+    color:var(--color-secundario);
+    margin-bottom:1rem;
+}
+
+
+.cta{
+    background-color:var(--color-secundario);
+    color:var(--color-claro);
+    text-align:center;
+    padding:3rem 0;
+}
+
+.cta h2{
+    margin-bottom:1rem;
+}
+
+/*formulario */
+
+.formulario{
+    padding:3rem 0;
+}
+
+.form-contacto{
+    max-width:100%;
+}
+
+/* pie de pagina */
+
+.site-footer{
+    background-color:var(--color-principal);
+    color:var(--color-claro);
+    text-align:center;
+    padding:2rem 0;
+}
+
+.footer-flex{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.footer-links{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+}
+
+.footer-links a,
+.redes a{
+    color:var(--color-secundario);
+}
+
+.redes{
+    display:flex;
+    justify-content:center;
+    gap:1rem;
+    font-size:1.3rem;
+}
+
+/* Tblet media query */
+
+@media (min-width:768px){
+
+    .hero{
+        flex-direction:row;
+        align-items:center;
+        text-align:left;
+    }
+
+    .hero-texto,
+    .hero-img{
+        flex:1;
+    }
+
+    .beneficios-flex{
+        flex-direction:row;
+    }
+
+    .actividades-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .seguridad-flex{
+        flex-direction:row;
+        align-items:center;
+    }
+
+    .seguridad-img,
+    .seguridad-texto{
+        width:50%;
+    }
+
+    .footer-flex{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+    }
+}
+
+/* PC media query */
+
+@media (min-width:1024px){
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .nav-item{
+        margin-right: auto;
+    }
+
+    .actividades-grid{
+        grid-template-columns:repeat(4,1fr);
+    }
+
+    .form-contacto{
+        max-width:600px;
+        margin:auto;
+    }
+
+    #navbarNavDropdown{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
+

@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GymBros</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <link rel="stylesheet" href="css/general.css">
+    <link rel="stylesheet" href="css/index.css" />
+</head>
+
+<body>
+
+    <!--! Encabezado -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <h2> GymBros </h2>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation" id="boton-desplegable">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#beneficios">Beneficios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#planes">Planes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+        <!--! Inicio -->
+        <section id="inicio">
+            <div class="container hero">
+                <div class="hero-texto">
+                    <h1>Transforma tu cuerpo, fortalece tu mente</h1>
+                    <p>
+                        Entrena con equipos modernos y programas diseñados para ayudarte
+                        a alcanzar tus objetivos físicos y mejorar tu estilo de vida.
+                    </p>
+                    <a href="#planes" class="btn-cta">
+                        Únete ahora
+                    </a>
+                </div>
+
+                <div class="hero-img">
+                    <img src="img/hero.jpg" alt="Persona entrenando en el gimnasio">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!--! Beneficios -->
+        <section id="beneficios" class="beneficios">
+            <div class="container">
+                <h2 class="titulo-seccion">¿Por qué entrenar con GymBros?</h2>
+
+                <div class="beneficios-flex">
+
+                    <article class="beneficio-item">
+                        <h3>Fuerza y Rendimiento</h3>
+                        <p>Programas diseñados para aumentar tu fuerza, resistencia y condición física.</p>
+                    </article>
+
+                    <article class="beneficio-item">
+                        <h3>Disciplina Constante</h3>
+                        <p>Rutinas estructuradas que te ayudan a crear hábitos saludables y mantener la motivación.</p>
+                    </article>
+
+                    <article class="beneficio-item">
+                        <h3>Planes Personalizados</h3>
+                        <p>Entrenamientos adaptados a tus objetivos y nivel de experiencia.</p>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!--! Planes -->
+
+        <section id="planes" class="actividades">
+            <div class="container">
+                <h2 class="titulo-seccion">Nuestros Planes</h2>
+
+                <div class="actividades-grid">
+
+                    <article class="card-actividad">
+                        <img src="img/basico.jpg" alt="Plan Básico">
+                        <div class="card-body">
+                            <h3>Plan Básico</h3>
+                            <p>Acceso al gimnasio y zona de entrenamiento general.</p>
+                            <p><strong>$20/mes</strong></p>
+                            <a href="#" class="btn-cta">Inscribirme</a>
+                        </div>
+                    </article>
+
+                    <article class="card-actividad">
+                        <img src="img/premium.jpg" alt="Plan Premium">
+                        <div class="card-body">
+                            <h3>Plan Premium</h3>
+                            <p>Acceso completo a todas las áreas y clases grupales.</p>
+                            <p><strong>$35/mes</strong></p>
+                            <a href="#" class="btn-cta">Inscribirme</a>
+                        </div>
+                    </article>
+
+                    <article class="card-actividad">
+                        <img src="img/entrenador.jpg" alt="Entrenamiento Personal">
+                        <div class="card-body">
+                            <h3>Entrenamiento Personal</h3>
+                            <p>Sesiones individuales con un entrenador certificado.</p>
+                            <p><strong>$60/mes</strong></p>
+                            <a href="#" class="btn-cta">Inscribirme</a>
+                        </div>
+                    </article>
+
+                    <article class="card-actividad">
+                        <img src="img/cross.webp" alt="Cross Training">
+                        <div class="card-body">
+                            <h3>Cross Training</h3>
+                            <p>Entrenamiento funcional para mejorar fuerza y resistencia.</p>
+                            <p><strong>$40/mes</strong></p>
+                            <a href="#" class="btn-cta">Inscribirme</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Informacion-->
+        <section id="nosotros" class="seguridad">
+            <div class="container">
+                <div class="seguridad-flex">
+
+                    <img src="img/gym.webp" alt="Instalaciones del gimnasio" class="seguridad-img">
+
+                    <div class="seguridad-texto">
+                        <h2>Quiénes Somos</h2>
+                        <p>
+                            GymBros es un gimnasio urbano enfocado en el desarrollo de fuerza,
+                            disciplina y bienestar. Contamos con instalaciones modernas,
+                            entrenadores capacitados y planes adaptados para todos los niveles.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!--LLamado a la acción -->
+        <section class="cta">
+            <div class="container">
+                <h2>Empieza tu transformación hoy</h2>
+                <p>Únete a nuestra comunidad y alcanza tus objetivos físicos.</p>
+                <a href="#contacto" class="btn-cta-outline">Únete Ahora</a>
+            </div>
+        </section>
+
+        <!-- Formulario -->
+        <section id="contacto" class="formulario">
+            <div class="container">
+
+                <h2 class="titulo-seccion">Solicita Información</h2>
+
+                <form class="form-contacto" method="get">
+
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" id="nombre" class="form-control" placeholder="Ingresa tu nombre">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="correo" class="form-label">Correo Electrónico</label>
+                        <input type="email" id="correo" class="form-control" placeholder="ejemplo@correo.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" id="telefono" class="form-control" placeholder="0999999999">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea id="mensaje" class="form-control" rows="4"
+                            placeholder="Escribe tu mensaje"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-cta">Enviar</button>
+
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-flex">
+
+            <div>
+                <h3>GymBros</h3>
+                <p>info@gymbros.com</p>
+                <p>+593 999 999 999</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#beneficios">Beneficios</a>
+                <a href="#planes">Planes</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <p>&copy; 2026 GymBros. Todos los derechos reservados.</p>
+
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
